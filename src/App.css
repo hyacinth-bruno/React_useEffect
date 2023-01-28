@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+
+.country {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.country {
+  flex: 1 0 30%; /* make the items flexible in the main axis, fixed in the cross-axis, and 30% width */
+  border: 1px solid black;
+  margin: 10px;
+}
+
