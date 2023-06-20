@@ -9,19 +9,14 @@ export default function ProductItems({ name, region, map, flag, border }) {
         Visit map here
       </a>{" "}
       <br />
-
-
       <div className="border">
-  Border:
-  {border ? 
-    border.map((item) => {
-      return <p>{item}</p>;
-    }) : 
-    "no borders"
-  }
-</div>
-
-
+        Border:
+        {border
+          ? border.map((item) => {
+              return <p>{item}</p>;
+            })
+          : "no borders"}
+      </div>
       <div className="flag">flag: {flag}</div>
     </div>
   );
